@@ -1,0 +1,79 @@
+:root {
+  --custom-background-color: #193b62;
+}
+
+.custom-navbar .navbar-brand {
+  color: #0000ff;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-color: white !important;
+}
+
+.custom-navbar .nav-link {
+  color:  #FFD700 !important;
+}
+
+.custom-navbar .nav-item.dropdown:hover .nav-link {
+ 
+  color:goldenrod !important;
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: white;
+  border: none;
+  margin-right: 500px;
+  --bs-dropdown-min-width: 35px;
+}
+
+.custom-navbar .dropdown-item {
+  color: #0e0e0e;
+  
+}
+.custom-navbar .dropdown-item:hover {
+  color: #0e0e0e;
+}
+
+
+
+.custom-navbar {
+  background-color:var(--custom-background-color); /* Change to your preferred background color */
+  padding: 8px;
+}
+
+
+
+
+
+.navbar-brand img {
+  width: 40px; /* Adjust logo size */
+  height: 40px;
+}
+.navbar-nav .dropdown-menu {
+   position: absolute; 
+}
+
+
+@media (max-width: 800px) {
+  .navbar-brand {
+    justify-content: center; /* Center logo on mobile */
+  }
+}
+
+/* Color Picker Container */
+.color-picker-container {
+  position: absolute;
+  top: 70px;
+  right: 200px; 
+  z-index: 1000;
+  max-width: 90%; 
+  transition: all 0.3s ease; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .color-picker-container {
+    left: 120px; 
+     
+  }
+}

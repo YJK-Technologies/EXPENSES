@@ -1,0 +1,118 @@
+
+.exp-main {
+  background-color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.exp-container {
+  background-color: #fff;
+  box-shadow: 0 0 12px gold;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 2px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Form Styles */
+.exp-form {
+  padding: 2px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.exp-input-field {
+  width: 100% !important;
+ content: 55px !important;
+  margin: 30px 0 !important;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding-left: 60px  !important;
+  padding-right: 60px  !important;
+  transition: border-color 0.3s;
+  position: relative;
+  color: #000;
+}
+
+.exp-input-field:hover {
+  border-color: goldenrod;
+}
+
+.exp-form-floating {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.exp-input-field:focus,
+.exp-input-field:valid {
+  border-color: goldenrod;
+}
+
+.exp-input-field:focus + .exp-form-labels,
+.exp-input-field:valid + .exp-form-labels {
+  transform: translateY(-50%) translateY(0.75);
+  font-size: 18px;
+  color: #000;
+  top: -13px;
+  left: 10px;
+}
+
+.exp-form-labels {
+  position: absolute;
+  top: 33%;
+  transform: translateY(-50%);
+  left: 10px;
+  pointer-events: none;
+  color: #000;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+/* Adjusting Dropdown Display */
+.exp-input-field:focus + .exp-form-labels,
+.exp-input-field:valid + .exp-form-labels {
+  top: -13px;
+}
+
+/* Submit Button Styles */
+.exp-btn {
+  width: 50%;
+  padding: 10px;
+  background-color: gold;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.exp-btn:hover {
+  background-color: black;
+  color: gold;
+  border-color: gold;
+}
+
+/* Header Styles */
+.exp-display-3 {
+  border-radius: 6px;
+  border-color: #000;
+  background-color: #202020;
+  color: gold;
+  text-shadow: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.exp-display-3:hover {
+  color: #000;
+  border-color: black;
+  background-color: gold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
